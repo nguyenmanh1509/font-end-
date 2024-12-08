@@ -1,0 +1,98 @@
+.users-container {
+    .title {
+        text-align: center;
+        margin: 10px 0;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .user-table {
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #0071ba;
+                color: white;
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr:hover {
+                background-color: #ddd;
+            }
+        }
+
+        .btn-edit, .btn-delete {
+            width: 50px;
+            border: none;
+            outline: none;
+            background: transparent;
+            color: #fff;
+            margin: 0 5px;
+            
+            &.btn-edit {
+                background:transparent;
+                color: orange;
+            }
+            
+            &.btn-delete {
+                background: transparent;
+                color:#04AA6D
+            }
+        }
+    }
+}
+.modal-user-container{
+    .modal-user-body{
+        display:flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        .input-container{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+            width: 49%;
+            input{
+                border-radius: 3px;
+                height: 30px;
+                border: 1px solid grey;
+                outline: none;
+                padding: 0 5px;
+                background-color: #f0f0f0;
+                
+            }
+        }
+    }
+   
+
+}
+button.close {
+    position: absolute !important; 
+    //top: 0px !important; // Điều chỉnh khoảng cách từ trên xuống
+    right: 5px !important; // Đẩy nút sát mép phải
+    font-size: 20px; // Kích thước của biểu tượng "X"
+    color: #f4f4f4; // Màu sắc
+   
+    cursor: pointer; // Con trỏ dạng click
+    border:none;
+    background-color:transparent !important;
+    &:hover {
+      opacity: 1; // Rõ nét hơn khi hover
+      color: #007bff; // Đổi sang màu xanh khi hover
+    }
+  }
+  .fa-plus:before {
+    content: "\f067";
+    left: auto !important;
+    margin-right: 8px;
+}
